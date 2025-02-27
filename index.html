@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the College Store!</h1>
+    <nav>
+      <ul>
+        <li><a href="#catalog">Catalog</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#suggestions">Suggestions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="catalog">
+    <h2>Item Catalog</h2>
+    <div class="item">
+      <h3>Notebook</h3>
+      <p>Price: $5.00</p>
+      <p>Availability: <span class="available">In Stock</span></p>
+    </div>
+    <div class="item">
+      <h3>Pen</h3>
+      <p>Price: $1.50</p>
+      <p>Availability: <span class="available">In Stock</span></p>
+    </div>
+    <div class="item">
+      <h3>College T-Shirt</h3>
+      <p>Price: $15.00</p>
+      <p>Availability: <span class="out-of-stock">Out of Stock</span></p>
+    </div>
+  </section>
+
+  <section id="feedback">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Feedback:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <section id="suggestions">
+    <h2>Suggestions Box</h2>
+    <form id="suggestionForm">
+      <label for="suggestion">Your Suggestion:</label>
+      <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
+      
+      <button type="submit">Submit Suggestion</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: store@college.edu</p>
+    <p>Phone: +1 (123) 456-7890</p>
+    <p>Address: 123 College Street, Campus City, USA</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 College Store. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
